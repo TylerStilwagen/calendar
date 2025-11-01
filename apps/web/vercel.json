@@ -1,6 +1,5 @@
 {
   "buildCommand": "cd ../.. && yarn build",
-  "outputDirectory": ".next",
   "crons": [
     {
       "path": "/api/cron/calendar-cache-cleanup",
