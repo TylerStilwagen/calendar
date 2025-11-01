@@ -1,41 +1,14 @@
 {
   "buildCommand": "cd ../.. && yarn build",
+  "installCommand": "cd ../.. && yarn install",
   "crons": [
     {
       "path": "/api/cron/calendar-cache-cleanup",
       "schedule": "0 5 * * *"
     },
     {
-      "path": "/api/cron/calendar-subscriptions",
-      "schedule": "0 6 * * *"
-    },
-    {
-      "path": "/api/cron/calendar-subscriptions-cleanup",
-      "schedule": "0 3 * * *"
-    },
-    {
-      "path": "/api/cron/queuedFormResponseCleanup",
-      "schedule": "0 12 * * *"
-    },
-    {
-      "path": "/api/tasks/cron",
-      "schedule": "0 1 * * *"
-    },
-    {
-      "path": "/api/calendar-cache/cron",
-      "schedule": "0 2 * * *"
-    },
-    {
       "path": "/api/tasks/cleanup",
       "schedule": "0 0 * * *"
-    },
-    {
-      "path": "/api/cron/credentials",
-      "schedule": "0 7 * * *"
-    },
-    {
-      "path": "/api/cron/selected-calendars",
-      "schedule": "0 8 * * *"
     }
   ]
 }
